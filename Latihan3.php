@@ -21,6 +21,7 @@ class User {
         if ($inputUsername === $this->username && $inputPassword === $this->password) {
             // Jika keduanya cocok, kembalikan pesan berhasil.
             return "Selamat datang, {$this->username}! Login berhasil.";
+            
         } else {
             // Jika salah satu atau keduanya tidak cocok, kembalikan pesan gagal.
             return "Login gagal. Username atau password salah.";
