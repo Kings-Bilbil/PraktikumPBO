@@ -19,7 +19,6 @@ $date = date('Y-m-d H:i:s');
         min-height: 100vh;
         margin: 0;
         padding: 16px;
-        background-image: url("sky-414199_1280.jpg");
     }
     .form-container {
       /* Memberi efek "glassmorphism" (seperti kaca buram) */
