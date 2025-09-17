@@ -49,7 +49,7 @@ if ($page === 'home') {
       width: 100%;
       padding: 12px;
       text-align: center;
-      background: #00ff48ff; /* Warna latar tombol */
+      background: #007bff; /* Warna latar tombol */
       border: none; /* Menghilangkan garis tepi */
       border-radius: 8px;
       color: white; /* Warna teks tombol */
