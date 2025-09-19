@@ -109,6 +109,15 @@ $mahasiswa->tampilkanPassword();
     </style>
 </head>
 <body>
-    
+    <div class="form-container">
+        <h1 class="keterangan">Data Mahasiswa</h1>
+        <!-- Menampilkan hasil dari variabel PHP -->
+        <p class="keterangan">Nama: <?php echo $mahasiswa->nama;?></p>
+        <p class="keterangan">Nim: <?php echo $mahasiswa->nim;?></p>
+        <p class="keterangan">Prodi: <?php echo $mahasiswa->prodi;?></p>
+        <p class="keterangan">IPK: <?php $nilai->tampilkanIPK();?></p>
+        <p class="keterangan">Password: <?php $mahasiswa->tampilkanPassword();?></p>
+        <a href="/" class="button-link">Kembali ke index</a>
+    </div>
 </body>
 </html>
