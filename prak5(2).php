@@ -38,16 +38,6 @@ $mahasiswa->nim = "1046";
 $mahasiswa->prodi = "Sistem Informasi";
 $nilai = new Nilai();
 $nilai->ipk = "4.0";
-
-echo $mahasiswa->nama;
-echo "\n";
-echo $mahasiswa->nim;
-echo "\n";
-echo $mahasiswa->prodi;
-echo "\n";
-$nilai->tampilkanIPK();
-echo "\n";
-$mahasiswa->tampilkanPassword();
 ?>
 
 <!DOCTYPE html>
