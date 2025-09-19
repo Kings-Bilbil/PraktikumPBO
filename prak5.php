@@ -42,7 +42,7 @@ $mahasiswa3 -> keterangan= "Keluar";
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Praktikum 5</title>
+    <title>Praktikum 5.1</title>
     <style>
         body{
         font-family:system-ui,Segoe UI,Arial,sans-serif;
@@ -93,6 +93,12 @@ $mahasiswa3 -> keterangan= "Keluar";
     .button-link:hover {
       background: #0056b3; /* Menggelapkan warna latar tombol */
     }
+    hr {
+            border: none;
+            height: 1px;
+            background-color: #ccc;
+            margin: 20px 0;
+        }
     </style>
 </head>
 <body>
@@ -100,7 +106,12 @@ $mahasiswa3 -> keterangan= "Keluar";
         <h1 class="keterangan">Class Mahasiswa</h1>
         
         <!-- Menampilkan hasil dari variabel PHP -->
-        <p class="keterangan"><?php $mahasiswa1->getKeterangan();?></p>
+        <p class="keterangan"><?php echo $mahasiswa1->nama;?></p>
+        <p class="keterangan"><?php echo $mahasiswa1->nim;?></p>
+        <p class="keterangan"><?php echo $mahasiswa1->prodi;?></p>
+        <p class="keterangan"><?php echo $mahasiswa1->angkatan;?></p>
+        <p class="keterangan"><?php echo $mahasiswa1->keterangan;?></p>
+        <hr>
         <p class="keterangan"><?php $mahasiswa2->getKeterangan();?></p>
         <p class="keterangan"><?php $mahasiswa3->getKeterangan();?></p>
         <a href="/" class="button-link">Kembali ke index</a>
