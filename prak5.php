@@ -106,14 +106,23 @@ $mahasiswa3 -> keterangan= "Keluar";
         <h1 class="keterangan">Class Mahasiswa</h1>
         
         <!-- Menampilkan hasil dari variabel PHP -->
-        <p class="keterangan"><?php echo $mahasiswa1->nama;?></p>
-        <p class="keterangan"><?php echo $mahasiswa1->nim;?></p>
-        <p class="keterangan"><?php echo $mahasiswa1->prodi;?></p>
-        <p class="keterangan"><?php echo $mahasiswa1->angkatan;?></p>
-        <p class="keterangan"><?php echo $mahasiswa1->keterangan;?></p>
+        <p class="keterangan">Nama: <?php echo $mahasiswa1->nama;?></p>
+        <p class="keterangan">Nim: <?php echo $mahasiswa1->nim;?></p>
+        <p class="keterangan">Prodi: <?php echo $mahasiswa1->prodi;?></p>
+        <p class="keterangan">Angkatan: <?php echo $mahasiswa1->angkatan;?></p>
+        <p class="keterangan">Keterangan: <?php echo $mahasiswa1->keterangan;?></p>
         <hr>
-        <p class="keterangan"><?php $mahasiswa2->getKeterangan();?></p>
-        <p class="keterangan"><?php $mahasiswa3->getKeterangan();?></p>
+        <p class="keterangan">Nama: <?php echo $mahasiswa2->nama;?></p>
+        <p class="keterangan">Nim: <?php echo $mahasiswa2->nim;?></p>
+        <p class="keterangan">Prodi: <?php echo $mahasiswa2->prodi;?></p>
+        <p class="keterangan">Angkatan: <?php echo $mahasiswa2->angkatan;?></p>
+        <p class="keterangan">Keterangan: <?php echo $mahasiswa2->keterangan;?></p>
+        <hr>
+        <p class="keterangan">Nama: <?php echo $mahasiswa3->nama;?></p>
+        <p class="keterangan">Nim: <?php echo $mahasiswa3->nim;?></p>
+        <p class="keterangan">Prodi: <?php echo $mahasiswa3->prodi;?></p>
+        <p class="keterangan">Angkatan: <?php echo $mahasiswa3->angkatan;?></p>
+        <p class="keterangan">Keterangan: <?php echo $mahasiswa3->keterangan;?></p>
         <a href="/" class="button-link">Kembali ke index</a>
     </div>
 </body>
