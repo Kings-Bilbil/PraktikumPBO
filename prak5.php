@@ -12,7 +12,6 @@ class Mahasiswa {
         echo "Prodi: $this->prodi\n";
         echo "Angkatan: $this->angkatan\n";
         echo "Keterangan: $this->keterangan\n";
-        echo "-------------------------------\n";
     }
 }
 
@@ -101,9 +100,9 @@ $mahasiswa3 -> keterangan= "Keluar";
         <h1 class="keterangan">Class Mahasiswa</h1>
         
         <!-- Menampilkan hasil dari variabel PHP -->
-        <p class="keterangan"><?php $mahasiswa1->getKeterangan();
-$mahasiswa2->getKeterangan();
-$mahasiswa3->getKeterangan(); ?></p>
+        <p class="keterangan"><?php $mahasiswa1->getKeterangan();?></p>
+        <p class="keterangan"><?php $mahasiswa2->getKeterangan();?></p>
+        <p class="keterangan"><?php $mahasiswa3->getKeterangan();?></p>
         <a href="/" class="button-link">Kembali ke index</a>
     </div>
 </body>
