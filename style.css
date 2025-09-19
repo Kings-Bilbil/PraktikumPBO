@@ -28,6 +28,8 @@ body{
     
     .keterangan{
         text-align: center;
+        line-height: 1.6;
+
     }
     .button-link {
       display:block;
@@ -50,3 +52,40 @@ body{
     .button-link + .button-link {
         margin-top: 10px;
     }
+        .login-result {
+            text-align: center;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+        /* Style untuk input form */
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-sizing: border-box;
+        }
+        /* Style untuk tombol submit */
+        button {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            margin-top: 20px;
+            background: #007bff;
+            border: none;
+            border-radius: 8px;
+            color: white;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+

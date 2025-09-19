@@ -60,74 +60,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form Login</title>
     <!-- CSS diperbarui untuk menangani form input -->
-    <style>
-        body {
-            font-family: system-ui, Segoe UI, Arial, sans-serif;
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            margin: 0;
-            padding: 16px;
-        }
-        .form-container {
-            background: rgba(255, 255, 255, 0.9);
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            padding: 30px 40px;
-            border-radius: 16px;
-            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-            width: 100%;
-            max-width: 400px; /* Lebar disesuaikan untuk form */
-            box-sizing: border-box;
-        }
-        .keterangan {
-            text-align: center;
-            line-height: 1.6;
-        }
-        .login-result {
-            text-align: center;
-            margin-top: 20px;
-            font-weight: bold;
-        }
-        /* Style untuk input form */
-        .form-group {
-            margin-bottom: 15px;
-        }
-        .form-group label {
-            display: block;
-            margin-bottom: 5px;
-            font-weight: 600;
-        }
-        .form-group input {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            box-sizing: border-box;
-        }
-        /* Style untuk tombol submit */
-        button {
-            display: block;
-            width: 100%;
-            padding: 12px;
-            margin-top: 20px;
-            background: #007bff;
-            border: none;
-            border-radius: 8px;
-            color: white;
-            font-size: 16px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: background 0.3s ease;
-        }
-        button:hover {
-            background: #0056b3;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <div class="form-container">
