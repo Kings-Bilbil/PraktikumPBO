@@ -27,6 +27,7 @@ if ($page === 'home') {
     <a href="/objeksegitiga.php" class="button-link">Menghitung Segitiga</a>
     <a href="/prak5.php" class="button-link">Praktikum 5.1</a>
     <a href="/prak5(2).php" class="button-link">Praktikum 5.2</a>
+    <a href="/prak6.php" class="button-link">Praktikum 6</a>
   </div>
 </div>
 </body>
