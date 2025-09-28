@@ -33,7 +33,7 @@ $melati = new Bunga('Melati', 'Putih');
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Praktikum 5.2 - Bunga Cantik</title>
+    <title>Praktikum 6 - Bunga Cantik</title>
     <style>
         body {
             font-family: system-ui, Segoe UI, Arial, sans-serif;
