@@ -140,14 +140,14 @@ $gabungan=[new Buku("Matematika"), new Majalah("Kartun")];
         
         <hr>
 
-        <p class="keterangan"><b>Latihan 2:</b><br>Telah dibeli 1 unit 
+        <p class="keterangan"><b>Latihan 2:</b><br> 
         <?php foreach ($BangunDatar as $bangun){echo $bangun->luas();} ?>
         </p>
         
         <hr>
 
         <p class="keterangan"><b>Latihan 3</b><br>
-        <?php foreach ($gabungan as $kumpul){$kumpul->pinjam();} ?>
+        <?php foreach ($gabungan as $kumpul){echo $kumpul->pinjam();} ?>
         </p>
 
         <a href="/" class="button-link">Kembali ke Index</a>
