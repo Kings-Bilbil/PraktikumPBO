@@ -135,7 +135,7 @@ $gabungan=[new Buku("Matematika"), new Majalah("Kartun")];
         <h1 class="keterangan">Abstraksi & Polimorfisme</h1>
         
         <p class="keterangan"><b>Latihan 1:</b><br>
-        <?php echo $mobil->jalan(); "\n".$motor->jalan(); ?>
+        <?php echo $mobil->jalan(); $motor->jalan(); ?>
         </p>
         
         <hr>
