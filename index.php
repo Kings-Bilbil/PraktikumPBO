@@ -29,7 +29,7 @@ if ($page === 'home') {
     <a href="/prak5(2).php" class="button-link">Praktikum 5.2</a>
     <a href="/prak6.php" class="button-link">Praktikum 6</a>
     <a href="/abs&pol.php" class="button-link">Abstraksi & Polimorfisme</a>
-    <a href="/perpustakaan_digital/index.php" class="button-link">Praktikum 7</a>
+    <a href="/perpustakaan_digital/index.php" class="button-link">Praktikum7</a>
   </div>
 </div>
 </body>
