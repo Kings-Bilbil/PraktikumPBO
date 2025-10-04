@@ -49,7 +49,6 @@ abstract class ItemPerpustakaan{
     abstract function pinjam();
 }
 class Buku extends ItemPerpustakaan{
-    private $nama;
     public function __construct($nama){
         $this->nama=$nama;
     }
@@ -58,7 +57,6 @@ class Buku extends ItemPerpustakaan{
     }
 }
 class Majalah extends ItemPerpustakaan{
-    private $nama;
     public function __construct($nama){
         $this->nama=$nama;
     }
