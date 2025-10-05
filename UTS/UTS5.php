@@ -8,7 +8,7 @@ class Matematika {
 
     // Method untuk menghitung luas lingkaran
     public static function hitungLuasLingkaran($r) {
-        self::$counter + 1;
+        self::$counter ++;
         return $r * $r * self::pi;
         // TODO: tambahkan counter setiap kali method dipanggil
         // TODO: gunakan konstanta PI untuk menghitung luas lingkaran
@@ -17,7 +17,7 @@ class Matematika {
 
     // Method untuk menampilkan berapa kali method dipanggil
     public static function getCounter() {
-        echo self::$counter;
+        return self::$counter;
         // TODO: kembalikan nilai $counter
     }
 }
