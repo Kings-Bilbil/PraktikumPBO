@@ -1,10 +1,5 @@
 <?php
 
-// =================================================================
-// BAGIAN DEFINISI CLASS & TRAIT
-// Semua definisi class dan trait tetap sama.
-// =================================================================
-
 trait Loggable
 {
     public function logActivity(string $message): void
@@ -25,7 +20,6 @@ trait Searchable
 {
     public function searchByTitle(string $keyword): bool
     {
-        // Menggunakan stristr untuk pencarian case-insensitive
         return stristr($this->judul, $keyword) !== false;
     }
 }
@@ -181,18 +175,17 @@ class Transaksi
         $item->pinjam();
         
         $this->logActivity("Transaksi peminjaman: {$pengguna->nama} meminjam {$item->judul}.");
+        
         $this->sendNotification("Transaksi peminjaman '{$item->judul}' berhasil.");
+        
         $pengguna->sendNotification("Halo {$pengguna->nama}, Anda telah berhasil meminjam '{$item->judul}'.");
         echo "------------------------------------------------------" . PHP_EOL . PHP_EOL;
     }
 }
 
-
 // =================================================================
-// BAGIAN EKSEKUSI & PERSIAPAN TAMPILAN
-// Menangkap semua output 'echo' ke dalam variabel
+// BAGIAN EKSEKUSI: Kode di bawah ini membuat dan menjalankan sistem
 // =================================================================
-ob_start();
 
 // 1. Membuat beberapa item perpustakaan
 $buku = new Buku("Laskar Pelangi", "Andrea Hirata", 2005, "978-979-3062-79-2");
@@ -234,67 +227,4 @@ foreach ($koleksiItem as $item) {
     }
 }
 
-// Mengambil semua output yang ditangkap dan menyimpannya ke variabel
-$log_aktivitas = ob_get_clean();
 ?>
-
-<!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Log Sistem Perpustakaan</title>
-    <style>
-        body{
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            background: #f0f2f5;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            margin: 0;
-            padding: 16px;
-            background-image: url('https://source.unsplash.com/1600x900/?library,books');
-            background-size: cover;
-            background-position: center;
-        }
-        .form-container {
-            background: rgba(255, 255, 255, 0.85);
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            padding: 30px 40px;
-            border-radius: 16px;
-            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-            width: 100%;
-            max-width: 800px; /* Lebar disesuaikan untuk log */
-            box-sizing: border-box;
-        }
-        h1 {
-            text-align: center;
-            color: #333;
-            margin-bottom: 20px;
-        }
-        /* Style untuk menampilkan log agar mudah dibaca */
-        pre {
-            background-color: rgba(0, 0, 0, 0.05);
-            border-radius: 8px;
-            padding: 15px;
-            white-space: pre-wrap;      /* Memastikan teks akan wrap */
-            word-wrap: break-word;      /* Memecah kata jika terlalu panjang */
-            font-family: 'Courier New', Courier, monospace;
-            font-size: 14px;
-            color: #333;
-            max-height: 50vh; /* Batas tinggi, bisa di-scroll jika lebih */
-            overflow-y: auto; /* Tambah scrollbar vertikal jika perlu */
-        }
-    </style>
-</head>
-<body>
-    <div class="form-container">
-        <h1>Log Aktivitas Perpustakaan</h1>
-        <!-- Menampilkan hasil log yang sudah ditangkap -->
-        <pre><?php echo htmlspecialchars($log_aktivitas); ?></pre>
-    </div>
-</body>
-</html>

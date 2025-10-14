@@ -28,6 +28,7 @@ if ($page === 'home') {
     <a href="/prak5.php" class="button-link">Praktikum 5.1</a>
     <a href="/prak5(2).php" class="button-link">Praktikum 5.2</a>
     <a href="/prak6.php" class="button-link">Praktikum 6</a>
+    <a href="/tgs2.php" class="button-link">Tugas 2 Inheritance</a>
     <a href="/abs&pol.php" class="button-link">Abstraksi & Polimorfisme</a>
     <a href="/perpustakaan_digital/index.php" class="button-link">Praktikum7</a>
   </div>
