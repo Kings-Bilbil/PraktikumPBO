@@ -31,7 +31,6 @@ class Library {
         return false;
     }
 
-    // ... sisa method (findBookById, listAllBooks, dll.) tidak berubah ...
     public function findBookById(string $id): ?Book {
         if (!isset($this->collection[$id])) {
             throw new Exception("Buku dengan ID '{$id}' tidak ditemukan!");
@@ -51,5 +50,27 @@ class Library {
             return true;
         }
         return false;
+    }
+
+    /**
+     * Magic method yang dipanggil SEBELUM objek diserialisasi.
+     * Kita hanya menyimpan data buku (collection), koneksi database (db) diabaikan.
+     */
+    public function __sleep(): array
+    {
+        echo "<p style='color: orange;'>[SLEEP]: Menyiapkan objek Library untuk disimpan. Koneksi database akan dilepaskan.</p>";
+        return ['collection'];
+    }
+
+    /**
+     * Magic method yang dipanggil SETELAH objek dipulihkan.
+     * Kita membuat ulang koneksi database yang tadinya hilang.
+     */
+    public function __wakeup(): void
+    {
+        // Karena kita tidak menyimpan Database, kita harus membuat instance baru di sini.
+        $this->db = new Database(); 
+        echo "<p style='color: orange;'>[WAKEUP]: Objek Library telah dipulihkan. Koneksi database baru telah dibuat.</p>";
+        $this->log("Objek Library berhasil dibangunkan dari serialization.");
     }
 }
